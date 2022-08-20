@@ -1,4 +1,6 @@
-# CODERHOUSE - Javascript
+# CODERHOUSE - Javascript Desafío 1
 # Francisco Salvador Carreño Giscafré
 
-Repo para subir lo trabajado y desafíos para el curso de Javascript de coderhouse
+Crear un algoritmo utilizando un ciclo
+
+Juego del Ahorcado
