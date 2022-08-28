@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descuento de Cheques</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
+  <script src="https://kit.fontawesome.com/c66c6e39bd.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Desafío 1</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Item</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Itme</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Francisco Salvador Carreño Giscafré
+      </span>
+    </div>
+  </div>
+</nav>
+<!-- Section: content -->
+<div class="container">
+  <h1>Bienvenido</h1>
+  <!-- Form descuento de cheques -->
+  <form class="row g-3 mt-5">
+    <h2>Calculo de descuento de Cheques</h2>
+    <div class="col-md-6 col-sm-12">
+      <label for="monto">Monto del Cheque</label>
+      <input type="number" min="1" step="any" class="form-control" id="monto"/>
+    </div>
+    <div class="col-md-2 col-sm-12">
+      <label for="tasa">% Tasa anual de interés</label>
+      <input type="number" min="1" step="any" class="form-control" id="tasa"/>
+    </div>
+    <div class="col-md-2 col-sm-12">
+      <label for="dias">Días al vencimiento</label>
+      <input type="number" min="1" class="form-control" id="dias"/>
+    </div>
+    <div class="col-md-2 col-sm-12">
+      <label for="tasa_gasto">% Gasto sobre monto</label>
+      <input type="number" min="1" step="any" class="form-control" id="tasa_gasto"/>
+    </div>
+    <div class="col-1"><button type="submit" class="btn btn-success">Calcular</button></div>
+  </form>
+  <!-- Form descuento de cheques -->
+
+  <!-- Section: explanation -->
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6 col-sm-12 mt-5">
+      <h3 class="text-center">Calculadora de descuento de cheques</h3>
+      <p class="text-center">Muchas veces, algunas situaciones financieras nos obligan a tomar decisiones apresuradas,
+        por suerte hoy en día tenemos muchas opciones para conseguir el capital necesario de manera oportuna.
+        Una de las formas más recurridas a la hora de financiarse es el descuento de cheques, realizado por entidades financieras,
+        éstas ofrecen distintas ofertas que pueden variar dependiendo del monto, de los plazos etc. aquí tienes una calculadora que
+        te ayudará en muy sencillos pasos a tomar la decisión correcta!
+      </p>
+    </div>
+    <div class="col-md-6 col-sm-12 mt-5">
+      <img class="img-fluid" src="https://github.com/carrenogf/imagenes/blob/main/macarenafucilieriweb/trabajo-equipo2-min.png?raw=true" alt="">
+    </div>
+  </div>
+  <!-- Section: explanation -->
+</div>
+<!-- Section: content -->
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted mt-5">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Conectate conmigo en mis redes sociales</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div class="col-6 d-flex flex-row justify-content-between">
+      <a href="" class="text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/carrenogf/coder-javascript" target="_blank" class="text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <a class="text-reset" href="#"><i class="fa-solid fa-address-card"></i>Francisco Carreño</a>
+          </h6>
+          <p>
+            Te invito a que trabajemos y crezcamos juntos, tu exito también es el mio!
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Servicios</h6>
+          <p><a href="#!" class="text-reset">Impuestos</a></p>
+          <p><a href="#!" class="text-reset">Contabilidad</a></p>
+          <p><a href="#!" class="text-reset">Finanzas</a></p>
+          <p><a href="#!" class="text-reset">Negocio</a></p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Links de utilidad</h6>
+          <p><a href="#!" class="text-reset">AFIP</a></p>
+          <p><a href="#!" class="text-reset">Rentas Tucumán</a></p>
+          <p><a href="#!" class="text-reset">BCRA</a></p>
+          <p><a href="#!" class="text-reset">OTRO</a></p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contacto
+          </h6>
+          <p><i class="fas fa-home me-3"></i>San Miguel de Tucumán</p>
+          <p><i class="fas fa-envelope me-3"></i>email@gmail.com</p>
+          <p><i class="fas fa-phone me-3"></i>+54 381 1111111</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="#">Francisco Carreño</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+</body>
+</html>
