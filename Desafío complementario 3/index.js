@@ -130,6 +130,7 @@ function amortizacion(sistema) {
   }
   if (sistema === "directo") {
     return (capital, tasa, n) => {
+      
       let resultado = [];
       let tasa_p = tasa / 100 / 12;
       let interes = capital * tasa_p * n;
@@ -160,9 +161,9 @@ function validarFormulario(e){
     e.preventDefault();
     let formulario = e.target;
     let sistema = document.getElementById("sistema").value
-    let capital = document.getElementById("capital").value
-    let tasa = document.getElementById("tasa").value
-    let n = document.getElementById("periodos").value
+    let capital = parseFloat(document.getElementById("capital").value)
+    let tasa = parseFloat(document.getElementById("tasa").value)
+    let n = parseInt(document.getElementById("periodos").value)
     let calular_sistema = amortizacion(sistema);
     calular_sistema(capital, tasa, n);
 }
