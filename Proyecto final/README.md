@@ -1,4 +1,4 @@
-# CODERHOUSE - Javascript Desafío: incorporar eventos
+# CODERHOUSE - Javascript Desafío: Proyecto Final
 # Francisco Salvador Carreño Giscafré
 
 ## Calculo de un prestamo
